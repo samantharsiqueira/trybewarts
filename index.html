@@ -10,52 +10,64 @@
   <header class="header">
     <img src="./images/trybewarts-header-logo.svg" class="trybewarts-header-logo">
   <h1 id="trybewarts-header-title">Trybewarts</h1>
-    
-
+  <!--Falta o requisito 3 aqui-->
 </header>
 
 <main>
+   <!--Falta o requisito 6/7/10/11 aqui-->
   <form id="evaluation-form">
 
     <input type="text" id="input-name" placeholder="Nome">
     <input type="text" id="input-lastname" placeholder="Sobrenome">
     <input type="email" id="input-email" placeholder="Email">
 
-    <input type="select" >
+    <input type="select" >   <!--Falta o requisito 9 aqui-->
 
+    <label id="label-family">Qual sua família?
+      <input type="radio" name="family" value="Frontend"> <p>1</p>
+      <input type="radio" name="family" value="Backend"> <p>1</p>
+      <input type="radio" name="family" value="FullStack"> <p>1</p>
+  
+    </label>
 
     <label id="label-content">
       <p>Qual conteúdo você está com mais vontade de aprender?</p>
-    <input type="checkbox" class="subject" value="Comunicação">
+    <input type="checkbox" class="subject" value="Comunicação"> 
     <input type="checkbox" class="subject" value="Trabalho em equipe">
     <input type="checkbox" class="subject" value="Negociação">
     <input type="checkbox" class="subject" value="Escuta ativa">
-    <input type="checkbox" class="subject" value="Métodos de array;">
+    <input type="checkbox" class="subject" value="Métodos de array">
     <input type="checkbox" class="subject" value="Jest">
   </label>
 
   <label id="label-rate">
     <p>Como você avalia a Trybewarts?</p>
-    <input type="radio" name="rate" value="1">
-    <input type="radio" name="rate" value="2">
-    <input type="radio" name="rate" value="3">
-    <input type="radio" name="rate" value="4">
-    <input type="radio" name="rate" value="5">
-    <input type="radio" name="rate" value="6">
-    <input type="radio" name="rate" value="7">
-    <input type="radio" name="rate" value="8">
-    <input type="radio" name="rate" value="9">
-    <input type="radio" name="rate" value="10">
+    <input type="radio" name="rate" value="1"> <p>1</p>
+    <input type="radio" name="rate" value="2"> <p>1</p>
+    <input type="radio" name="rate" value="3"> <p>1</p>
+    <input type="radio" name="rate" value="4"> <p>1</p>
+    <input type="radio" name="rate" value="5"> <p>1</p>
+    <input type="radio" name="rate" value="6"> <p>1</p>
+    <input type="radio" name="rate" value="7"> <p>1</p>
+    <input type="radio" name="rate" value="8"> <p>1</p>
+    <input type="radio" name="rate" value="9"> <p>1</p>
+    <input type="radio" name="rate" value="10"> <p>1</p>
   </label>
 
   <label>
     <p>Descreva os principais pontos de aprendizado até aqui (1 hard skill / 1 soft skill):</p>
-    <textarea min="20" max="500"></textarea>
+    <textarea maxlength="500"
+    minlength="120"></textarea>
   </label>
   </form>
+
+  <label for="agreement" id="label-infos"> 
+    <input type="checkbox" id="agreement" class="form-check-input"> 
+    <p>Você concorda com o uso das informações acima?</p>
+ </label>
+
+<button id="submit-btn" class="btn btn-success" disabled>Enviar</button>
 </main>
-
-
 <footer>
   <p> Direitos reservados à Trybewarts©.</p>
 </footer>
