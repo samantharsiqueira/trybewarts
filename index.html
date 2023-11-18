@@ -3,82 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Trybewarts</title>
   <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
   <header class="header">
     <img src="./images/trybewarts-header-logo.svg" class="trybewarts-header-logo">
   <h1 id="trybewarts-header-title">Trybewarts</h1>
-  <!--requisito 3 aqui-->
   <div>
   <form class="trybewarts-login">
     <input type="email" name="email" placeholder="Email" value="Email" id="login-email">
-    <input type="text" name="password" placeholder="" value="Senha" id="login-password">
-    <button id="login-btn">Entrar</button></div>
+    <input type="text" name="password" placeholder="Senha" value="Senha" id="login-password">
+    <button id="login-btn">Entrar</button>
+  </div>
   </form>
 </header>
 
-<main>
-   <!--Falta o requisito 6/7/10/11 aqui-->
+<h2 id="form-title">Formulário de Avalicação</h2>
+<main>   
+   
   <form id="evaluation-form">
-
+    <div class="name">
     <input type="text" id="input-name" placeholder="Nome">
     <input type="text" id="input-lastname" placeholder="Sobrenome">
+  </div>
+  <div class="email-select;">
     <input type="email" id="input-email" placeholder="Email">
+    
+    <label for="house-select">Casa:</label>
+<select name="houses" id="house">
+  <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+  <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+  <option value="Corvinode" id="corvinode-house">Corvinode</option>
+  <option value="Pytherina" id="pytherina-house">Pytherina</option>
+</select>  </div><!--Falta o requisito 9 aqui-->
 
-    <img src="./images/trybewarts-colored.svg" id="trybewarts-forms-logo"  height: 500px;>
-    <input type="select" >   <!--Falta o requisito 9 aqui-->
-
-    <label id="label-family">Qual sua família?
-      <input type="radio" name="family" value="Frontend"> <p>1</p>
-      <input type="radio" name="family" value="Backend"> <p>1</p>
-      <input type="radio" name="family" value="FullStack"> <p>1</p>
+    <label id="label-family">
+      <p>Qual sua família?</p>
+      <input type="radio" name="family" value="Frontend"> 
+      <input type="radio" name="family" value="Backend"> 
+      <input type="radio" name="family" value="FullStack">
   
     </label>
 
     <label id="label-content">
-      <p>Qual conteúdo você está com mais vontade de aprender?</p>
+      <p>Qual conteúdo você está com mais vontade de aprender?</p></label>
     <input type="checkbox" class="subject" value="Comunicação"> 
+    <p>Comunicação</p>
     <input type="checkbox" class="subject" value="Trabalho em equipe">
+    <p>Trabalho em equipe</p>
     <input type="checkbox" class="subject" value="Negociação">
+    <p>Negociação</p>
     <input type="checkbox" class="subject" value="Escuta ativa">
+    <p>Escuta ativa</p>
     <input type="checkbox" class="subject" value="Métodos de array">
+    <p>Métodos de array</p>
     <input type="checkbox" class="subject" value="Jest">
-  </label>
-
+    <p>Jest</p>
+ 
   <label id="label-rate">
     <p>Como você avalia a Trybewarts?</p>
     <input type="radio" name="rate" value="1"> <p>1</p>
-    <input type="radio" name="rate" value="2"> <p>1</p>
-    <input type="radio" name="rate" value="3"> <p>1</p>
-    <input type="radio" name="rate" value="4"> <p>1</p>
-    <input type="radio" name="rate" value="5"> <p>1</p>
-    <input type="radio" name="rate" value="6"> <p>1</p>
-    <input type="radio" name="rate" value="7"> <p>1</p>
-    <input type="radio" name="rate" value="8"> <p>1</p>
-    <input type="radio" name="rate" value="9"> <p>1</p>
-    <input type="radio" name="rate" value="10"> <p>1</p>
+    <input type="radio" name="rate" value="2"> <p>2</p>
+    <input type="radio" name="rate" value="3"> <p>3</p>
+    <input type="radio" name="rate" value="4"> <p>4</p>
+    <input type="radio" name="rate" value="5"> <p>5</p>
+    <input type="radio" name="rate" value="6"> <p>6</p>
+    <input type="radio" name="rate" value="7"> <p>7</p>
+    <input type="radio" name="rate" value="8"> <p>8</p>
+    <input type="radio" name="rate" value="9"> <p>9</p>
+    <input type="radio" name="rate" value="10"> <p>10</p>
   </label>
 
-  <label>
-    <p>Descreva os principais pontos de aprendizado até aqui (1 hard skill / 1 soft skill):</p>
-    <textarea maxlength="500"
-    minlength="120"></textarea>
+  <label class="textarea">
+    Descreva os principais pontos de aprendizado até aqui (1 hard skill / 1 soft skill):
+    <textarea maxlength="500" minlength="20" id="textarea" placeholder="Maravilhoso esse projeto."></textarea>
   </label>
   </form>
 
+  <img src="./images/trybewarts-colored.svg" id="trybewarts-forms-logo">
 </main>
+
+
 <label for="agreement" id="label-infos"> 
   <input type="checkbox" id="agreement" class="form-check-input"> 
   <p>Você concorda com o uso das informações acima?</p>
 </label>
 
-<button id="submit-btn" disabled>Enviar</button>
+<button type="submit" id="submit-btn" disabled>Enviar</button>
 <footer>
   <p> Direitos reservados à Trybewarts©.</p>
 </footer>
 </body>
 </html>
 
- <!--Falta o requisito 3/4/7 aqui-->
