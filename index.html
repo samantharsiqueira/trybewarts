@@ -10,7 +10,13 @@
   <header class="header">
     <img src="./images/trybewarts-header-logo.svg" class="trybewarts-header-logo">
   <h1 id="trybewarts-header-title">Trybewarts</h1>
-  <!--Falta o requisito 3 aqui-->
+  <!--requisito 3 aqui-->
+  <div>
+  <form class="trybewarts-login">
+    <input type="email" name="email" placeholder="Email" value="Email" id="login-email">
+    <input type="text" name="password" placeholder="" value="Senha" id="login-password">
+    <button id="login-btn">Entrar</button></div>
+  </form>
 </header>
 
 <main>
@@ -21,6 +27,7 @@
     <input type="text" id="input-lastname" placeholder="Sobrenome">
     <input type="email" id="input-email" placeholder="Email">
 
+    <img src="./images/trybewarts-colored.svg" id="trybewarts-forms-logo"  height: 500px;>
     <input type="select" >   <!--Falta o requisito 9 aqui-->
 
     <label id="label-family">Qual sua família?
@@ -61,15 +68,17 @@
   </label>
   </form>
 
-  <label for="agreement" id="label-infos"> 
-    <input type="checkbox" id="agreement" class="form-check-input"> 
-    <p>Você concorda com o uso das informações acima?</p>
- </label>
-
-<button id="submit-btn" class="btn btn-success" disabled>Enviar</button>
 </main>
+<label for="agreement" id="label-infos"> 
+  <input type="checkbox" id="agreement" class="form-check-input"> 
+  <p>Você concorda com o uso das informações acima?</p>
+</label>
+
+<button id="submit-btn" disabled>Enviar</button>
 <footer>
   <p> Direitos reservados à Trybewarts©.</p>
 </footer>
 </body>
 </html>
+
+ <!--Falta o requisito 3/4/7 aqui-->

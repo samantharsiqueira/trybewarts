@@ -1,6 +1,19 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trybewarts-login {
+  display: flex;
+  flex-direction: column;
 }
 
 main {
@@ -11,4 +24,20 @@ main {
   display: flex;
   flex-direction: column;
   width: 675px;
+}
+
+#trybewarts-forms-log img {
+  display: flex;
+  justify-content: right;
+}
+
+#submit-btn {
+  display: flex;
+  justify-content: baseline;
+  align-items: end;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
 }
