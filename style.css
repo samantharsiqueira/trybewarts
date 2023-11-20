@@ -1,44 +1,52 @@
-* {
+body {
   margin: 0;
   padding: 0;
+  font-size: 14pt;
+  background-color: azure;
 }
 
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
-  margin-bottom: 10px;
+  color: white;
   height: 100px;
+  align-items: stretch;
 }
 
-header h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
 
 .trybewarts-login {
   display: flex;
   align-items: center;
-  border: 4px solid red;
+  padding-right: 10px;
+
+}
+
+.trybewarts-login button {
+  border-radius: 8px;
+  height: 21px;
+  width: 85px;
+  color: white;
+  background-color: darkslateblue;
 }
 
 #form-title {
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+
+input {
+  border-radius: 7px;
 }
 
 main {
   display: flex;
-  border: 4px solid red;
+  justify-content: space-evenly;
 }
 
 #evaluation-form {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   width: 675px;
 }
 
@@ -49,30 +57,78 @@ main {
   align-items: flex-end;
 }
 
-.name {
-  display: flex;
-  flex-direction: row;
+#input-name {
+  width: 300px;
+  height: 25px;
+  padding: 5px;
+  background-color: white;
 }
 
-.email-select {
-  display: flex;
-  flex-direction: row;
+#input-lastname {
+  width: 300px;
+  height: 25px;
+  padding: 5px;
+  background-color: white;
 }
 
-#submit-btn {
+#input-email {
+  width: 300px;
+  height: 25px;
+  padding: 5px;
+  background-color: white;
+}
+
+.radio-family {
   display: flex;
-  justify-content: baseline;
-  align-items: end;
+  flex-direction: column;
+  padding: 10px;
 }
 
 #label-rate {
-  display: flex;
-  flex-direction: row;
+  display: inline;
 }
 
-footer {
+.div-checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-textarea {
+  padding: 5px;
+}
+
+.textarea {
   display: flex;
   justify-content: center;
+  margin-top: 5px;
+}
+
+#label-infos {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  margin: auto;
+}
+
+#submit-btn {
+  border: none;
+  padding: 10px;
+  background-color: darkslateblue;
+  width: 100%;
+  color: aliceblue;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 8px;
+  margin: auto;
+}
+
+
+footer {
   background-color: black;
-  color: white;
+  color: azure;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  font-size: 20px;
 }
